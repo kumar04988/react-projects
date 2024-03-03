@@ -1,0 +1,163 @@
+@import "../../common/common.scss";
+
+.card-item{
+    background-color: $secondary-color;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-height: 200px;
+    margin: 15px 5px;
+    // background-color: red;
+    &:hover{
+        transform: scale(1.12);
+        transition: all  0.3s;
+    }
+}
+   
+
+.card-top{
+    height: 240px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.card-bottom{
+    padding: 10px;
+    color: $font-primary;
+    max-height: 70px;
+    overflow-y: scroll;
+    height: 80px;
+
+    h4{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    
+}
+
+.card-bottom::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:"600px"){
+
+    .card-item{
+
+    margin: 0px;
+    max-height: 20px;
+    height: 30px;
+    width: 130px;
+    min-height: 250px;
+
+
+    }
+
+    // .card-item{
+    //     background-color: $secondary-color;
+    // cursor: pointer;
+    // transition: all 0.3s;
+
+    // &:hover{
+    //     transform: scale(1.1);
+    //     transition: all  0.3s;
+    // }
+    // margin: 0px;
+    // min-height: 250px;
+    // height: 100%;
+    // }
+
+    .card-top{
+        height: 200px;
+        margin: 0px;
+        min-height: 150px;
+
+    
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+
+    .card-bottom{
+        padding: 10px;
+        color: $font-primary;
+        max-height: 70px;
+        overflow-y: scroll;
+        margin: 0px;
+
+        
+    
+        h4{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 4px;
+            
+    
+        }
+        
+    }
+    
+    
+    // .card-top{
+    //     height: 240px;
+    
+    // }
+    
+    // .card-bottom{
+    //     max-height: 80px;
+
+    
+    //     h4{
+    //         font-size: 15px;            
+    
+    //     }
+        
+    // }
+
+}
+
+
+
+// @media (min-width:1023px) {
+
+
+
+//     .card-item{
+//         min-height: 170px;
+//         overflow-y: scroll;
+        
+//     }
+    
+//     .card-top{
+//         height: 160px;
+    
+    
+//     }
+
+
+//     .card-bottom{
+//         padding: 10px;
+//         // color: $font-primary;
+//         // max-height: 70px;
+//         // overflow-y: scroll;
+//         // margin: 0px;
+
+        
+    
+//         h4{
+//             font-size: 14px;
+//             // font-weight: 400;
+//             // margin-bottom: 4px;
+            
+    
+//         }
+        
+//     }
+
+    
+// }

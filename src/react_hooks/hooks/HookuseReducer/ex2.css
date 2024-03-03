@@ -1,0 +1,56 @@
+.contact-wrapper{
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact-wrapper button{
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact-wrapper input{
+    margin: 5px;
+    border: 0.1px solid gray;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 15px;
+
+
+}
+
+.contact-wrapper input:focus{
+    outline: none;
+
+}
+
+.contact-wrapper input[type="submit"]{
+    cursor: pointer;
+
+
+}
+
+.contact-wrapper .contact{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px auto;
+
+
+    
+}
+
+.contact-wrapper .delete-button button{
+
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+}

@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+// body {
+//   background-image: url("./images/vpn.jpg");
+//   background-size: cover;
+//   background-position: center;
+// }
+
+.vpn-labs-full-wrapper {
+  nav{
+    // width: 220%;
+  }
+  .container{
+    width: 100%;
+  }
+
+  .container nav {
+    background-color: black;
+    padding: 20px;
+    // z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 120%;
+  }
+
+  nav .logo {
+    color: tomato;
+  }
+
+  nav .menu-list {
+    color: white;
+  }
+
+  nav .logo font {
+    color: azure;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    
+    // width: 100%;
+    // height: 100%;
+
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 50vh;
+    // min-height: 80vh;
+  }
+
+  /* .menu-list{
+    display: flex;
+    justify-content: space-evenly;
+} */
+}

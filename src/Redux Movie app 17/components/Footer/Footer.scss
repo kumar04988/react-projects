@@ -1,0 +1,18 @@
+@import '../../common/common.scss';
+body{
+    position: relative;
+}
+
+.footer{
+    background-color: $secondary-color;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: $font-primary;
+    position:static;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}

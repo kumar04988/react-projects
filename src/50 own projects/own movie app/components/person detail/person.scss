@@ -1,0 +1,26 @@
+.person-image{
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.person-image img{
+    width: 500px;
+    height: 740px;
+    margin: 2px;
+}
+
+.person-image::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px) {
+    .person-image img{
+        width: 414px;
+        height: 615px;
+        margin: 0px;
+    }
+
+    
+}

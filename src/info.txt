@@ -1,0 +1,230 @@
+contact list project
+---------------------
+1.create a folder called server-api and move inside this folder with cd folder name
+2.to create package.json file
+npm init --yes 
+3.This install json server
+npm i --save json-server
+4.To start json server
+npm start
+
+
+
+dependencies
+-----------
+1.yarn add redux react-redux @reduxjs/toolkit
+2.yarn add node-sass --save
+3.yarn add axios
+
+
+imp
+---
+19th video kandi -->react slick is one kit in it.
+
+
+https://kandi.openweaver.com/
+
+27.
+1.yarn add firebase
+2.yarn add react-bootstrap
+3.yarn add react-google-button
+4.yarn add react-router-dom
+
+
+31st video
+----------
+1.npm install react-phone-number-input --save
+2.yarn add react-phone-number-input --save
+
+semantic ui
+-----------
+1.yarn add semantic-ui-react semantic-ui-css
+
+react framework-refine boiler plate code project
+------------------------------------------------
+npx superplate-cli -o refine-antd refine-admin-panel
+
+To create a react app inside a folder which is named project
+------------------------------------------------------------
+npx create-react-app
+
+install react-router-dom and react-bootstrap
+-------------------------------------------------------
+npm i react-router-dom react-bootstrap bootstrap
+
+framer motion for animations
+----------------------------
+https://www.framer.com/motion/
+yarn add framer-motion
+
+
+
+
+
+
+things learnt 
+-------------
+1.contact manager site **********
+-----------------------
+1.BrowserRouter,Routes,Route from react-router-dom package,element={<component/>}
+2.array methods --> filter(),join(),toLowerCase(),includes(),map(),find()
+3.local storage,getItem,setItem
+4.useNavigate
+const navigate=useNavigate()
+navigate("/edit") --> It will change the web url path to baseurl/edit
+
+5.
+<Link  to="/add" state={{cont:contact}}> <div></div></Link> -->will send data wit state,useLocation will use that 
+const location=useLocation()
+setData(location.state.cont)
+
+6.
+props
+destructuring
+
+7.
+json server api with post, get, put, delete, const response =await api.post("/contacts",data) methods
+axios
+
+8.
+e.preventDefault()
+setData({...data,[e.target.name]:e.target.value}),while editing input field when there are multiple fields.
+
+9.
+form,onSubmit
+
+10.
+window.location.pathname
+
+
+
+
+
+2.VpnLabsNavbar
+------------------
+1.
+<div className='menu-icon'  onClick={()=>setClicked(!clicked)}>
+        <i className={clicked?"fa fa-times":'fa fa-bars'} ></i>
+
+
+.menu-icon .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-icon .fa-bars{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+2.
+.menu-list-render:not(:last-child) li a:hover
+
+
+3.
+VPN<font>Labs</font>
+
+4.
+@media (max-width: "800px") {
+
+}
+
+5.
+const List = [
+        {
+            title: "Home",
+            url: "/"
+        },
+        {
+            title: "KeyFeature",
+            url: "/key_feature"
+        },
+        {
+            title: "Pricing",
+            url: "/pricing"
+        },
+        {
+            title: "Testimonial",
+            url: "/testmonial"
+        },
+        {
+            title: "Try for free",
+            url: "/try-for-free"
+        },
+    ]
+
+    const renderList = List.map(({ url, title }, index) => {
+        return (
+            <div key={index} className="menu-list-render">
+                <li><a href={url}  activeClassName="active">{title}</a></li>
+            </div>
+        )
+    })
+
+
+
+3.
+
+
+17.Movie App
+------------
+Apis
+baseURL:"https://www.omdbapi.com"
+`?apiKey=${APIKey}&i=${id}&Plot=full`
+
+`?apiKey=${APIKey}&s=${movieorShowText}&type=movie`
+`?apiKey=${APIKey}&s=${movieorShowText}&type=series`
+
+const response = await MoviesApi.get(`?apiKey=${APIKey}&i=${id}&Plot=full`).catch((err)=>{
+        console.log("error",err)
+      })
+
+ const response = await movieApi.get(`?apiKey=${APIKey}&s=${movieorShowText}&type=movie`).catch((err)=>{
+        console.log("error",err)
+      })
+const response = await movieApi.get(`?apiKey=${APIKey}&s=${movieorShowText}&type=series`).catch((err)=>{
+        console.log("error",err)
+      })
+
+
+
+50.own projects movie app
+
+const getOriginals=async() =>{
+  url='https://api.themoviedb.org/3/discover/tv?api_key=19f84e11932abbc79e6d83f82d6d1045&with_networks=213'
+  fetchMovies(url,'.original__movies','poster_path')
+}
+
+// ** Function that fetches Trending Movies **
+function getTrendingNow() {
+  // backdrop_path
+  url='https://api.themoviedb.org/3/trending/movie/week?api_key=19f84e11932abbc79e6d83f82d6d1045'
+  fetchMovies(url,'#trending','backdrop_path')
+}
+
+// ** Function that fetches Top Rated Movies **
+function getTopRated() {
+  url='https://api.themoviedb.org/3/movie/top_rated?api_key=19f84e11932abbc79e6d83f82d6d1045&language=en-US&page=1'
+  fetchMovies(url,'#top_rated','poster_path')
+
+}
+
+get movie images
+curl --request GET \
+     --url https://api.themoviedb.org/3/movie/movie_id/images \
+     --header 'accept: application/json'
+
+
+https://api.themoviedb.org/3/movie/ 
+
+https://api.themoviedb.org/3/movie/12/images?api_key=19f84e11932abbc79e6d83f82d6d1045
+https://developer.themoviedb.org/reference/movie-details
+
+
+movie/popular?language=en-US&page=1&api_key=${ApiKey}
+
+
+
+
+
+

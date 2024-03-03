@@ -1,0 +1,99 @@
+/* FadeInOut.css */
+.fade-in-out img {
+    max-width: 100%;
+    transition: opacity 0.3s; /* Apply the transition effect to opacity */
+  }
+  
+  .fade-in-out img:hover {
+    opacity: 0.7; /* Image becomes semi-transparent on hover */
+  }
+  
+
+
+
+
+
+
+  /* ZoomInOut.css */
+.zoom-in-out img {
+    max-width: 100%;
+    transition: transform 0.3s; /* Apply the transition effect to transform */
+  }
+  
+  .zoom-in-out img:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+  }
+
+
+
+
+
+
+
+
+
+  /* SlideInOut.css */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slide-in-out img {
+    max-width: 100%;
+    animation: slideIn 0.5s; /* Slide in animation */
+  }
+  
+  .slide-in-out img:hover {
+    animation: slideOut 0.5s; /* Slide out animation on hover */
+  }
+
+
+
+
+
+  /* ThreeDImage.scss */
+.three-d-image {
+    perspective: 1000px; /* Set the perspective to create a 3D effect */
+  
+    .image-container {
+      width: 200px;
+      height: 200px;
+      transform-style: preserve-3d; /* Preserve the 3D transformations */
+      animation: rotate 5s infinite linear; /* Rotate animation */
+  
+      img {
+        width: 100%;
+        height: 100%;
+        transform: translateZ(100px); /* Move the image in the Z-axis for depth */
+  
+        /* Apply 3D rotation */
+        transform-origin: center center;
+        animation: rotate 5s infinite linear;
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg); /* Rotate from 0 degrees */
+    }
+    to {
+      transform: rotateY(360deg); /* Rotate to 360 degrees */
+    }
+  }
+  
+  
+  

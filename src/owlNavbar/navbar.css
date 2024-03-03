@@ -1,0 +1,144 @@
+
+.full-wrap-dark-navbar{
+
+.body-wrapper{
+    width: 100hh;
+    height: 100vh;
+    color: #fff;
+    background-image: url('./image/pexels-erik-karits-9788670.jpg');
+    background-size: cover;
+
+
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.7);
+    padding: 0px 8px;
+    align-items: center;
+    height: 14vh;
+
+}
+
+.logo{
+    font-size: 1.9rem;
+
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 7px;
+    margin-right: 7px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color: gray;
+    border-radius: 3px;
+    transition: 0.4s;
+    color: black;
+}
+
+.navbar {
+   
+}
+
+@media (max-width:780px){
+    .navbar{
+        display: none;
+    }
+    .hamburger{
+        position: absolute;
+        right: 2%;
+        display: flex;
+        width:20px;
+        flex-direction: column;
+        height: 22px;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .hamburger .bar{
+        width: 100%;
+        height:3px;
+        background-color: #fff;
+        transition: all 1s;
+
+    }
+
+    .cross{
+        position: absolute;
+        right: 2%;
+        display: flex;
+        width: 20px;
+        flex-direction: column;
+        height: 22px;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+
+    }
+    .cross .bar{
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition: 1s;
+
+    }
+
+    .cross .bar:nth-child(2){
+        opacity: 0;
+
+    }
+
+    .cross .bar:first-child{
+        transform: rotate(-45deg) translate(-2px,6px);
+    }
+
+    .cross .bar:last-child{
+        transform: rotate(45deg) translate(-2px,-7px);
+    }
+
+    ul {
+        position: absolute;
+        top:11vh;
+        height: 86vh;
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        right: -100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 1s ease-in ;
+
+
+    }
+  
+
+
+    .menu-slide ul {
+        right:0%;
+        transition: all 1s ease-in ;
+    }
+
+    .body-wrapper{
+        overflow: hidden;
+
+    }
+
+
+
+}
+
+
+
+}

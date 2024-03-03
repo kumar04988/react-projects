@@ -1,0 +1,124 @@
+.home{
+    text-align: center;
+    // margin-top: 20vh;
+   
+    
+    .name,.desc{
+        font-size: 60px;
+    }
+    font{
+        color: tomato;
+    }
+
+}
+
+.portfolio{
+    text-align: center;
+    // height: 100vh !important;
+    // width: 100%;
+
+    .about{
+        
+        // margin: auto;
+        p{
+            width: 50%;
+            margin: auto;
+            font-size: 20px ;
+            
+        }
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+
+    .each-card{
+        justify-self: center;
+        color: black;
+        width: 60%;
+        height: 30%;
+        margin: 30px;
+
+        .card-body{
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.contact{
+    .contact-text{
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .contact-form{
+        width: 50%;
+        margin: auto;  
+    }
+    .between{
+        width: 0.02%;
+        height:60vh;
+
+    }
+}
+
+.progress-bar-animate{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: tomato;
+    transform-origin: 0%;
+    z-index: 14;
+}
+
+
+@media (max-width:800px){    
+.portfolio{
+    text-align: center;
+    // height: 100vh !important;
+    // width: 100%;
+   
+
+    
+
+    
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .each-card{
+        justify-self: center;
+        color: black;
+        width: 60%;
+        height: 30%;
+        margin: 30px;
+
+    }
+
+}
+
+
+.contact{
+    .contact-form{
+        width: 80%;
+        margin: auto;
+
+        .form-control{
+            height: 20%;
+            width: 170px;
+        }
+
+
+        
+    }
+}
+
+
+}

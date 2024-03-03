@@ -1,0 +1,297 @@
+.books-wrapper {
+  header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: x-large;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .error-msg{
+    // display: flex;
+    position: relative;
+  }
+
+  .x-mark{
+    position: absolute;
+    // background-color: red;
+    z-index: 2;
+    border-radius: 100px;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 2px;
+    cursor: pointer;
+
+    
+
+  }
+
+//   .alert-msg{
+
+//   }
+
+  section {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    & > div input {
+      border: none;
+      box-shadow: 0px 0px 2px 0.1px;
+      height: 40px;
+      width: 300px;
+      padding: 0px 10px;
+      margin: 14px 0px;
+      border-radius: 0px 4px 4px 0px;
+    }
+
+    & > div input:focus {
+      outline: none;
+    }
+    & > div > span:first-child {
+      background-color: black;
+      color: #ffffff;
+      padding: 12.6px 14px;
+      border-radius: 3px;
+    }
+
+    & > div:nth-child(4) > button {
+      margin-top: 20px;
+    }
+
+    & > div:nth-child(4) > button:first-child {
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px 0px 0px 4px;
+    }
+    .dark-green {
+      // background-color: #006666;
+      background-color: #00cf0a;
+      // border: none;
+
+      cursor: not-allowed;
+      color: #ffffff;
+    }
+    .light-green {
+      background-color: rgb(187, 144, 138);
+      cursor: pointer;
+      color: black;
+    }
+    .dark-tomoto {
+      background-color: tomato;
+      cursor: not-allowed;
+      color: #ffffff;
+    }
+    .light-tomoto {
+      background-color: rgb(187, 144, 138);
+      cursor: pointer;
+      color: black;
+    }
+    & > div:nth-child(4) > button:last-child {
+      // background-color: tomato;
+      // cursor: pointer;
+
+      // color: #ffffff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 0px 4px 4px 0px;
+    }
+
+    & > div:nth-child(4) > button:last-child:focus,
+    & > div:nth-child(4) > button:first-child {
+      outline: none;
+    }
+
+    & > div:nth-child(4) {
+      // margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .blue {
+      width: 335px;
+    }
+  }
+}
+
+.error-msg {
+  width: 335px;
+  margin: auto;
+}
+
+table {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.books-table-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.buttons-col{
+  // text-align: center;
+  & > button {
+    margin: 0px 3px;
+  }
+}
+
+.minus-plus-btn {
+    position: relative;
+    
+    & > button {
+        width: 20px;
+        
+
+        height: 20px;
+        margin: 0px 10px;
+
+        // text-align: center;
+      }
+
+      & > button:first-child{
+        position: absolute;
+        left: 50px;
+        padding: 0px 2px 0px 2px;
+      }
+      & > button:last-child{
+        position: absolute;
+        right: 50px;
+        padding: 0px 2px 0px 2px;
+
+      }
+
+      &>input{
+        border: none;
+        background-color: rgba(218, 213, 213, 0.89);
+        width: 55px;
+        text-align: center;
+        margin: 0px 3px;
+      
+        border-radius: 4px;
+      }
+
+      &>input:focus{
+        outline: none;
+      }
+
+}
+
+.books-table-wrapper {
+  .search {
+    text-align: center;
+  }
+
+  .fa-search {
+    background-color: black;
+    color: #ffffff;
+    padding: 8.7px 10px;
+    border-radius: 3px;
+  }
+
+  .search input {
+    border: none;
+    box-shadow: 0px 0px 2px 0.1px;
+    height: 29.4px;
+    width: 200px;
+    padding: 0px 10px;
+    margin: 14px 0px;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .search input:focus {
+    outline: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .books-wrapper {
+    section {
+     
+      width: 100%;
+     
+      & > div input:focus {
+        outline: none;
+        box-shadow: 0px 0px 0px 0.9px;
+      }
+
+      .blue {
+        width: 300px;
+      }
+    }
+  }
+
+  .refresh-btn {
+    display: none;
+  }
+
+
+  .books-table-wrapper {
+    width: 90%;
+
+  }
+
+  
+
+  .buttons-col {
+    display: flex;
+    
+    & > button {
+    font-size: 10px;
+      margin: 0px 1px;
+      padding: 0px 2px;
+      width: 36px;
+      height: 20px;
+    }
+
+
+    
+    width: 100%;
+  }
+
+
+  .minus-plus-btn{
+
+    & > button {
+    font-size: 10px;
+      margin: 0px 4px;
+      padding: 0px 1px;
+      width: 16px;
+      height: 20px;
+    }
+
+    & > button:first-child{
+        
+        left: 10px;
+        
+      }
+      & > button:last-child{
+        
+        right: 10px;
+        
+
+      }
+    width: 100%;
+
+  }
+
+ 
+
+
+    .search input:focus {
+        box-shadow: 0px 0px 0px 0.9px;
+
+      
+    }
+
+
+}

@@ -1,0 +1,55 @@
+/* RpaProgressBar.scss */
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px; /* Adjust the height as needed */
+    background-color: #f0f0f0; /* Background color of the progress bar */
+    position: relative;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px; /* Height of the yellow line */
+    width: 0; /* Initial width of the yellow line */
+    background-color: yellow; /* Color of the yellow line */
+    transition: width 2s linear; /* Transition for the width property */
+    z-index: 2; /* Ensure the yellow line is above icons */
+  }
+  
+  .steps-container {
+    display: flex;
+    align-items: center;
+    z-index: 3; /* Ensure the icons are above the yellow line */
+    position: relative;
+  }
+  
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-icon {
+    font-size: 24px;
+    color: #ccc; /* Color of inactive icons */
+    transition: color 0.3s ease; /* Smooth color transition for icons */
+  }
+  
+  .step.completed .step-icon {
+    color: #3498db; /* Color of active/completed icons */
+  }
+  
+  .step-label {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #333; /* Color of step labels */
+    font-weight: bold;
+  }
+  

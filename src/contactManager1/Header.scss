@@ -1,0 +1,21 @@
+.ui-fixed-menu{
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.2);
+    background-color: #fff;
+    z-index: 10;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.back-img{
+    position: absolute;
+    margin: 22px;
+    cursor: pointer;
+}
+
+.ui-container-center{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}

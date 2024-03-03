@@ -1,0 +1,40 @@
+.news-wrapper{
+
+
+    .header-cat{
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        
+    }
+    button{
+        outline: none;
+        background-color: tomato;
+        color: white;
+        border: none;
+        margin: 2px;
+        padding: 7px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button:focus{
+        background-color: green;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: red;
+    }
+    a:active{
+        color: green;
+    }
+
+    img{
+        cursor: pointer;
+    }
+    
+
+}

@@ -1,0 +1,85 @@
+.items{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 0.5px solid whitesmoke;
+    /* margin: 0px 30px; */
+    align-items: center;
+    /* border-radius: 8px; */
+}
+.items .content .header-main-card{
+    font-weight:bold;
+}
+
+.content-card-detail{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    // border-top: ;
+    // box-shadow: 0px 10px 0px 1px rgba(1,1,1,1) ;
+    // box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+.items .item1{
+    margin: 3px 10px;
+}
+.items .item3{
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+
+}
+
+.items .item2{
+    color: blue;
+    font-size: 20px;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+
+}
+
+.contact-list-heading-btn{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.button1{
+    position: absolute;
+    right:40px;
+    
+}
+
+.info{
+    margin-top: 6px;
+    position: absolute;
+    right: 160px;
+    cursor: pointer;
+}
+
+.search-contact {
+    margin: 20px;
+    
+    /* outline: none;
+    padding: 6px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 0.1px solid gray; */
+}
+
+
+
+/* .items .content{
+    margin-top: 8px;
+} */
+
+/* .item .content{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+} */
